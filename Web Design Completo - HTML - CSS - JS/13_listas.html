@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title> pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Carlos">
+    <meta name="description" content="texto bacana para ganhar ranking no google">
+    <meta name="keywords" content="html5, tecnologia">
+  </head>
+
+  <style>
+
+    li ul{
+      height: 0;
+      overflow: hidden;
+      transition: height .5s;
+    }
+
+    li:hover{
+      background: #ccc;
+    }
+
+    li:hover ul{
+      height: 40px;
+    }
+
+  </style>
+  <body>
+    
+    <ul>
+      <li>item 1</li>
+      <li>item 2
+        <ul>
+          <li>item 2.1</li>
+          <li>item 2.2</li>
+        </ul>
+      </li>
+      <li>item 3</li>
+    </ul>
+
+    <hr>
+
+     <dl> <!-- definition list -->
+      <dt> HTML</dt> <!-- definition term -->
+      <dd>xablau xablau xablau</dd> <!-- definition description -->
+
+      <dt> CSS</dt>
+      <dd>xablau xablau xablau</dd>
+    </dl>
+
+    <hr>
+
+    <dl>
+      <dt>www</dt>
+      <dt>internet</dt>
+      <dd>rede mundial de computadores</dd>
+
+      <dt>Javascript</dt>
+      <dd>linguagem script para internet</dd>
+      <dd>script para rodar no browser</dd>
+    </dl>
+
+  </body>
+</html>

@@ -1,0 +1,150 @@
+body{
+  font-family: tahoma, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#principal{
+  width: 90%;
+  margin: 20px auto;
+}
+
+.header-top{
+  height: 50px;
+  background-color: #161f2a;
+  position: relative;
+}
+
+.logotipo{
+  margin: 5px 0 0 135px;
+}
+
+.header-nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-nav ul{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header-nav li{
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 15px 0 0;
+  padding: 17px 0;
+}
+
+.header-nav a{
+  display: block;
+  padding: 0px 10px;
+  color: #566c80;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color .3s ease-in-out;
+}
+
+.header-nav a:hover{
+  color: rgb(235, 227, 227);
+}
+
+.img{
+  width: 100%;
+}
+
+.content-section{
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.content-section h1{
+  font-size: 36px;
+  color: #252525;
+}
+
+.content-section p{
+  font-size: 16px;
+  line-height: 2;
+  color: #555;
+}
+
+.content-cards {
+  color: #555;
+  padding: 0px 100px 50px 100px;
+  overflow: auto;
+}
+
+.card{
+  height: cover;
+  width: 32%;
+  float: left;
+  text-align: center;
+}
+
+.card-1, .card-2{
+  margin-right: 2%;
+}
+
+.card img{
+  width: 100%;
+  display: inline-block;
+}
+
+.card p{
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content-profile{
+  background-color: #003d52;
+  padding: 50px;
+  color: white;
+  background-image: url(./imagens/bg_detalhe.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.profile-img{
+  width: 350px;
+  height: auto;
+  float: right;
+  border-radius: 100%;
+}
+
+.content-profile h2{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.content-profile p{
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.localization{
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer{
+  height: 30px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 1px 2px 2px black;
+  background-color: #161f2a;
+  line-height: 30px;
+}
