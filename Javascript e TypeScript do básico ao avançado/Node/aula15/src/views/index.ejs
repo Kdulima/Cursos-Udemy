@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+<%- include('includes/head'); %>
+
   <section class="container">
-    <h1>Lista de Clientes</h1>
+    <h1><%= umaVariavelLocal %></h1>
     <form action='/' method="post">
     <label>Cliente</label>
     <input type="text" name="cliente" placeholder="Nome do Cliente">
@@ -16,6 +9,4 @@
     </form>
   </section>
 
-  <script src="./assets/js/bundle.js"></script>
-</body>
-</html>
+<%- include('includes/footer'); %>
