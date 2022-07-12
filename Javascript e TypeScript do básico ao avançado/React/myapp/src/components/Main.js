@@ -35,6 +35,20 @@ export default class Main extends Component {
     });
   };
 
+  // handleEdit = (event, index) => {
+  //   console.log('')
+  // }
+
+  handleDelete = (event, index) => {
+    const { tarefas } = this.state;
+    const novasTarefas = [...tarefas];
+    novasTarefas.splice(index, 1);
+
+    this.setState({
+      tarefas: [...novasTarefas],
+    });
+  };
+
   render() {
     const { novaTarefa, tarefas } = this.state;
 
@@ -59,12 +73,18 @@ export default class Main extends Component {
         </form>
 
         <ul className="tarefas">
-          {tarefas.map((tarefa) => (
+          {tarefas.map((tarefa, index) => (
             <li key={tarefa}>
               {tarefa}
               <span>
-                <FaEdit className="edit" />
-                <FaWindowClose className="delete" />
+                <FaEdit
+                  className="edit"
+                  onClick={(event) => this.handleEdit(event, index)}
+                />
+                <FaWindowClose
+                  className="delete"
+                  onClick={(event) => this.handleDelete(event, index)}
+                />
               </span>
             </li>
           ))}
